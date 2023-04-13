@@ -1,8 +1,8 @@
 $(function(){
     $('#fullpage').fullpage({
         // sectionsColor: [ '#484848' , '#2E4159' , '#8F8EBF' , '#9392d3' , '#5F5DA6' , '#4F4D8C' ,'#385a7a' , '#0B2559'],
-        sectionsColor: [ '#b4aeb8' , '#eceaf8' , '#9d9ea0' , '#ccc'],
-        anchors:       ['Home','About','Responsive','Graphic'],
+        sectionsColor: [ '#b4aeb8' , '#eceaf8' , '#9d9ea0' , '#eceaf8'],
+        anchors:       ['section1','section2','section3'],
 		autoScrolling:true,
 		scrollHorizontally:false,
         navigation:true,
@@ -16,46 +16,21 @@ $(function(){
                 console.log(index);
                 $('.header_left h1 .img2').addClass('on');
                 $('.header_left h1 .img1').removeClass('on');
-                $('.home h1').addClass('on');
-                $('.home .cic1').addClass('on');
-                $('.home .cic2').addClass('on');
-                $('.home .cic3').addClass('on');
-                $('.home .cic4').addClass('on');
-                $('.home .cic5').addClass('on');
-                $('.home .cic6').addClass('on');
-                $('.home .h2_1_ani').addClass('on');
-                $('.home .h2_2_ani').addClass('on');
             }
             else if(index==2){
                 console.log(index);
                 $('.header_left h1 .img1').addClass('on');
                 $('.header_left h1 .img2').removeClass('on');
-                $('.about h2').addClass('on');
-                $('.about .box2').addClass('on');
             }
             else if(index==3){
                 console.log(index);
                 $('.header_left h1 .img2').addClass('on');
                 $('.header_left h1 .img1').removeClass('on');
-                $('.responsive h2').addClass('on');
-                $('.slide_wrap .rsp_slide').addClass('on');
-                $('.slide_wrap .web_slide').addClass('on');
-                $('.slide_wrap .m_slide').addClass('on');
-                $('.responsive .respon_text .respon_text1').addClass('on');
-                $('.responsive .respon_text .respon_text2').addClass('on');
             }
             else if(index==4){
                 console.log(index);
-                $('.header_left h1 .img1').addClass('on');
-                $('.header_left h1 .img2').removeClass('on');
-                $('.graphic h2').addClass('on');
-                $('.gp_wrap .gp_inner_2').addClass('on');
-                $('.gp_wrap .gp_inner_3').addClass('on');
-                $('.gp_inner .gp_a').addClass('on');
-            }
-            //last section
-            if(index==5){
-                alert("끝까지 봐주셔서 감사합니다.");
+                $('.header_left h1 .img2').addClass('on');
+                $('.header_left h1 .img1').removeClass('on');
             }
         },
         // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
@@ -86,7 +61,7 @@ $(function(){
             $('.line').removeClass('on');
             $('.cover').animate({'left':'-100%'});
             $('.cover .line').children().removeClass('on');
-            $('.header_right').animate({'width':'35%'});
+            $('.header_right').animate({'width':'50%'});
             $('.gnb').removeClass('on');
             sw=0;
         }
@@ -97,7 +72,7 @@ $(function(){
         $('.line').removeClass('on');
         $('.cover').delay(1000).animate({'left':'-100%'});
         $('.cover .line').children().removeClass('on');
-        $('.header_right').animate({'width':'35%'});
+        $('.header_right').animate({'width':'50%'});
         $('.gnb').removeClass('on');
         sw=0;
     });
